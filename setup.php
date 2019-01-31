@@ -25,12 +25,12 @@ if(isset($_GET['page'])) {
 	$pageid = 1; // set $pageid equal to 1 or the home page.
 }
 	
-#page setup
+# Page setup
 $page = data_page($dbc, $pageid);
 
+# User Setup:
+$user = data_user($dbc, $_SESSION['username']);
 
-
-	
 
 
 
