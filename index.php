@@ -191,7 +191,7 @@ if(!isset($_SESSION['username'])) {
 					<div class="form-group">
 					
 					<label for="title">Body:</label>
-					<textarea class="form-control" name="body" id="body" rows="8" placeholder="Page Body"><?php echo $opened['body']; ?>" </textarea>
+					<textarea class="form-control editor" name="body" id="body" rows="8" placeholder="Page Body"><?php echo $opened['body']; ?>" </textarea>
 																											   
 					</div>
 																											   

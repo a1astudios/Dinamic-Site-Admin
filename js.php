@@ -32,11 +32,12 @@
 	
 
     tinymce.init({
-		selector:" textarea",
+		selector: ".editor",
+		
 		
 		plugins: [
 			"code advlist autolink image lists charmap print preview hr anchor pagebreak spellchecker",
-			"searchreplace wordcount visualblocks visualcharts code fullscreen insertdatetime media nonbreaking",
+			"searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
 			"save table contextmenu directionality emoticons template paste textcolor"
 		],
 	
@@ -54,4 +55,4 @@
 			{title: 'Table row 1', selector: 'tr', classes: 'tablerow1'}
 		]
 	});
-	</script>
+</script>
