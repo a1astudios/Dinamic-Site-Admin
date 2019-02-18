@@ -13,6 +13,7 @@ define('D_TEMPLATE', 'template');
 # functions:
 include('functions/data.php');
 include('functions/template.php');
+include('functions/sandbox.php');
 
 # Site Setup
 $debug = data_settings_value($dbc, 'debug-status');
@@ -28,14 +29,16 @@ if(isset($_GET['page'])) {
 }
 	
 # Page setup
+
+include_once('config/queries.php');
 $page = data_page($dbc, $pageid);
+
+
+if(isset($_GET['id'])) { $opened = data_page($dbc, $_GET['id']); }
+						  
 
 # User Setup:
 $user = data_user($dbc, $_SESSION['username']);
-
-
-
-
 
 
 
