@@ -1,5 +1,14 @@
+</div><!-- end wrap -->
+	
 <footer id="footer">
  
-  <p>	this is the footer</p>
+     <p>this is the footer</p>
 	
-</footer>
+</footer> <!-- END FOOTER -->
+	
+	
+	<?php if($debug == 1) { include('widgets/debug.php'); } ?>
+	
+</body>
+
+</html>

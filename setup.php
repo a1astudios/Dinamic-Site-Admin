@@ -22,19 +22,16 @@ $site_title = 'Dinamic Website';
 
 if(isset($_GET['page'])) {
 	
-	$pageid = $_GET['page']; // set $pageid to equal the value given in
+	$page = $_GET['page']; // set $pageid to equal the value given in
 } else {
 	
-	$pageid = 1; // set $pageid equal to 1 or the home page.
+	$page = 'dashboard'; // set $pageid equal to 1 or the home page.
 }
 	
 # Page setup
 
 include_once('config/queries.php');
-$page = data_page($dbc, $pageid);
 
-
-if(isset($_GET['id'])) { $opened = data_page($dbc, $_GET['id']); }
 						  
 
 # User Setup:
